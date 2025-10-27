@@ -1,5 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
 * {
+    font-family: "Faculty Glyphic", Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #7D4C6F;
+    --light-font: #F5EFF4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: minmax(60px, auto) minmax(60px, auto) 1fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-row: 1 / 4;
+    color: var(--light-font);
+    background-color: var(--accent-color);
+    padding-inline: 1.5rem;
+}
+
+.dash-items {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.dash-item {
+    font-size: 1.4rem;
+}
+
+#dashboard {
+    font-size: 2.2rem;
+}
+
+.dash-item, 
+.header,
+#dashboard {
+    padding-block: 1rem;
+}
+
+.header {
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.sign-in {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 1fr;
+    padding-inline: 1.5rem;
+    gap: 2rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
 }
