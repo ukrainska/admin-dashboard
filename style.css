@@ -13,6 +13,8 @@
 :root {
     --accent-color: #7D4C6F;
     --light-font: #F5EFF4;
+    --main-content-color: #E4D3DF;
+
 }
 
 .container {
@@ -57,12 +59,43 @@
 .sign-in {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     padding-inline: 1.5rem;
     gap: 2rem;
 }
 
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.sign-in, 
+.header {
+    background-color: var(--light-font);
+    padding-block: 1.7rem;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    background-color: var(--main-content-color);
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+}
+.heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.popular {
+    grid-column: 2;
+}
+
+button {
+    border-radius: 40px;
+    padding: 0.5rem 2rem;
+    background-color: var(--accent-color);
+    color: var(--light-font);
+    border: none;
 }
