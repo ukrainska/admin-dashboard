@@ -38,6 +38,9 @@
 
 .dash-item {
     font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 #dashboard {
@@ -153,4 +156,14 @@ button {
     background-color: var(--accent-color);
     color: var(--light-font);
     border: none;
+}
+
+img {
+    float: left;
+    filter: invert(86%) sepia(2%) saturate(3630%) hue-rotate(262deg) brightness(119%) contrast(92%);
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
 }
