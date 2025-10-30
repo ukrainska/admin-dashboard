@@ -59,6 +59,19 @@
     padding-inline: 2rem;
 }
 
+.notifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.not-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 90px;
+}
+
 .sign-in {
     display: grid;
     grid-auto-flow: column;
@@ -69,15 +82,18 @@
     border-radius: 8px;
 }
 
-.sign-in span {
-    font-weight: 500;
-    font-size: 1.4rem;
+.profile {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 90px;
+    grid-column: 1;
 }
 
 .sign-in, 
@@ -87,10 +103,16 @@
     position:sticky;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 600px auto;
+    grid-template-rows: auto auto;
     background-color: var(--main-content-color);
     padding-inline: 1.5rem;
     padding-block: 1rem;
@@ -122,10 +144,14 @@
 .image {
     background-color: var(--light-font);
     border-radius: 20px;
-    padding-top: 1.2rem;
+    border: 1px solid var(--light-font);
+    width: 100%;
+    height: auto;
 }
 
 .updates {
+    max-height: 700px;
+    overflow-y: auto;
     grid-column: 2;
     grid-row: 1;
 }
@@ -133,6 +159,11 @@
 .trends {
     grid-column: 2;
     grid-row: 2;
+    height: 100%;
+}
+
+.trends span {
+    font-weight: 600;
 }
 
 .announcements h3 {
@@ -149,15 +180,6 @@
     border-radius: 20px;
     padding: 1rem;
     overflow-y: auto;
-}
-
-.trends{
-    grid-column: 2;
-    height: 100%;
-}
-
-.trends span {
-    font-weight: 600;
 }
 
 button {
@@ -192,29 +214,10 @@ input {
     float:left;
 }
 
-.notifications {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.not-img {
-    width: 60px;
-    height: 60px;
-    border-radius: 90px;
-}
-
-.profile {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 20px;
-}
-
-.profile-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 90px;
-    grid-column: 1;
+.updates img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    object-fit: contain; 
 }
