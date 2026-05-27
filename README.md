@@ -2,11 +2,11 @@
 
 A cat-themed admin dashboard layout built with HTML and CSS. 
 
-This project was created to practice CSS Grid, layout structure, sidebar navigation, dashbord cards and responsive UI design.
+This project was created to practice CSS Grid, layout structure, sidebar navigation, dashboard cards and responsive UI design.
 
 ## Features 
 
-- Sidebar navigaiton
+- Sidebar navigation
 - Header with search and profile area
 - Dashboard-style image grid
 - Updates and favourites sections
@@ -33,7 +33,7 @@ This project was created to practice CSS Grid, layout structure, sidebar navigat
 - Improve mobile responsiveness
 - Add hover/focus states for buttons and sidebar items
 - Improve semantic HTML and accessibility
-- Add dark/ligh theme option
+- Add dark/light theme option
 - Add interactive dashboard cards with JavaScript
 
 ## Image Credits
@@ -48,4 +48,4 @@ Pictures are from Unsplash:
 
 ## Live Demo
 
-[View the project here] (https://ukrainska.github.io/admin-dashboard/)
+[View the project here](https://ukrainska.github.io/admin-dashboard/)
